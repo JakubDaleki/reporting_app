@@ -56,3 +56,6 @@ class ReportGenerator:
             order_total_avg=avg_order_total,
             commissions=comm
             )
+    
+# make ReportGenerator singleton to read the data only once from disc
+report_gen = ReportGenerator()
