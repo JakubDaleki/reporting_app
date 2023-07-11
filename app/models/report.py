@@ -8,10 +8,10 @@ class Commission(BaseModel):
 
 
 class Report(BaseModel):
-    customers: int
-    total_discount_amount: float
-    items: int
-    order_total_avg: float
-    discount_rate_avg: float
-    commissions: Commission
+    customers: int | None = None
+    total_discount_amount: float | None = None
+    items: int | None = None
+    order_total_avg: float | None = None
+    discount_rate_avg: float | None = None
+    commissions: Commission | None = None
 
